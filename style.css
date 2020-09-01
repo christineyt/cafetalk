@@ -1,0 +1,455 @@
+*{  
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    margin: 0 auto;
+    font-family: Helvetica, sans-serif;
+    color: black;
+    background-color: #ffffff;
+    font-size:22px;
+    opacity: 0.9;
+    text-align: center;
+}
+
+a {
+    color: #000000;
+  }
+
+.flex-container-main{
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-container-section1,
+.flex-container-section2,
+.flex-container-section3,
+.flex-container-section4{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+/* Header section */
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  height: 69px;
+  background-color: white;
+  border-bottom: 1px solid seashell;
+  align-items: center;
+}
+
+.flex-container-logo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header img {
+  height: 50px;
+  padding-left: 10px;
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+  list-style-type: none;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+.mob-wrapper{
+  display: none;
+}
+
+
+
+/* Main Section */
+
+main section
+.main{
+  padding-top: 69px;
+  opacity: 0.9;
+  width: 1220px;
+  margin: auto;
+}
+ 
+#mission {
+    opacity: 0.9;
+    width: 100%;
+    margin: 0 auto;
+    height: 800px;
+    background-image: url("./resources/brooke-cagle-WHWYBmtn3_0-unsplash.jpg"); 
+    padding-top: 200px;
+    background-size: cover;
+    background-position: center bottom;
+    display: grid;
+  }
+
+aside {
+  flex-basis: auto;
+}
+.content {
+    margin-right: 150px;
+    padding: 30px;
+    background-color: white;
+    color: black;
+    background: #DFB72C;
+    width: 400px;
+    /* flex-basis: auto; */
+  }
+
+fieldset{
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 25px;
+  border: none;
+} 
+
+fieldset div input{
+  display: block;
+  background: white;
+  border: 1px solid #DFB72C;
+  border-left: 0;
+  border-radius: 0 2px 2px 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 10px 16px;
+  width: 100%;
+  color: #857567;
+  font-family: "brandon-grotesque", "Brandon Grotesque", "Source Sans Pro", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.active li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+button{
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  font-family: "brandon-grotesque", "Brandon Grotesque", "Source Sans Pro", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  border: 0;
+  border-radius: 100px;
+  color: white;
+  font-size: 16px;
+  padding: 6px 12px;
+  cursor: pointer;
+
+}
+.fb{
+   background: #3b5998;
+}
+
+.fb:hover{
+  background: #5f7ec1;
+}
+
+.fb:active{
+  background: #263961;
+}
+
+/* one on one section */
+.flex-container-section1{
+  background-color: white;
+  padding: 20px 0;
+}
+
+.flex-container-section2{
+  background-color: seashell;
+  padding: 20px 0;
+}
+.items {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.item img{
+  width: 300px;
+  height:200px;
+}
+
+.item {
+  flex: 0 0 32%;
+  margin-left: 0%;
+
+}
+
+.item p {
+  text-align: center;
+  margin-top: 10px;
+} 
+
+/* appointment */
+li,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sec-title {
+  position: relative;
+  padding-bottom: 40px;
+}
+.sec-title .title {
+  position: relative;
+  color: #DFB72C;
+  font-size: 18px;
+  font-weight: 700;
+  padding-right: 50px;
+  margin-bottom: 15px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+.sec-title .title:before {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 7px;
+  width: 40px;
+  height: 1px;
+  background-color: #bbb;
+}
+.sec-title h2 {
+  position: relative;
+  color: #252525;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.5em;
+  display: block;
+}
+.sec-title.light h2 {
+  color: #fff;
+}
+.appointment-section {
+  position: relative;
+  padding: 110px 0 80px;
+}
+.appointment-section .form-column {
+  position: relative;
+  margin-bottom: 40px;
+}
+.default-form {
+  position: relative;
+}
+.default-form .form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+.default-form .form-group i {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #00b8ca;
+  font-size: 18px;
+}
+.default-form .form-group input[type="text"],
+.default-form .form-group input[type="tel"],
+.default-form .form-group input[type="email"],
+.default-form .form-group select {
+  position: relative;
+  display: block;
+  width: 100%;
+  line-height: 28px;
+  padding: 10px 20px;
+  color: #000;
+  height: 50px;
+  font-size: 13px;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  transition: all 0.3s ease;
+}
+.default-form .form-group input[type="text"]:focus,
+.default-form .form-group input[type="tel"]:focus,
+.default-form .form-group input[type="email"]:focus,
+.default-form .form-group textarea:focus {
+  border-color: #DFB72C;
+}
+.default-form .form-group textarea {
+  position: relative;
+  display: block;
+  width: 100%;
+  line-height: 22px;
+  padding: 15px 20px;
+  color: #797979;
+  height: 120px;
+  background: #fff;
+  resize: none;
+  font-size: 14px;
+  border: 1px solid #d7d7d7;
+  transition: all 0.3s ease;
+}
+.default-form .form-group .appointment-btn {
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 11px 30px;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #DFB72C;
+  border: 1px solid #DFB72C;
+  text-transform: uppercase;
+  color: #fff;
+}
+/* .default-form .form-group .btn-detail {
+  position: relative;
+  color: #777;
+  font-size: 15px;
+  margin-left: 35px;
+  display: inline-block;
+}
+.appointment-section .schedule-column {
+  position: relative;
+}
+.appointment-section .schedule-column .inner-outer {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.appointment-section .schedule-column .inner-outer:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 347px;
+  height: 268px;
+  background: url(https://i.ibb.co/gjZ1NFM/pattern-Appoinment.png) no-repeat;
+}
+.appointment-section .schedule-column .inner-column {
+  position: relative;
+  padding: 25px 30px;
+  border: 2px solid #DFB72C;
+  background-color: #fff;
+}
+.appointment-section .schedule-column h2 {
+  position: relative;
+  color: #252525;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4em;
+  margin-bottom: 15px;
+}
+.appointment-section .schedule-column .time-list {
+  position: relative;
+}
+.appointment-section .schedule-column .time-list li {
+  position: relative;
+  color: #777;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.appointment-section .schedule-column .time-list li:last-child {
+  margin-bottom: 0;
+}
+.appointment-section .schedule-column .time-list li strong {
+  color: #222;
+  font-weight: 700;
+}
+.appointment-section .schedule-column .time-list .closed {
+  position: relative;
+  color: #DFB72C;
+} */
+
+
+footer{
+  padding-top: 50px;
+  height: 300px;
+  background-color: grey;
+  text-align: center;
+  
+}
+
+@media (max-width: 500px){
+  #WRAPPER {
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+  }
+
+
+
+  header {
+    width: 100%;
+    position: absolute;
+    height: 69px;
+  }
+
+  .flex-container-logo {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .mob-wrapper {
+    display: block;
+    position: absolute;
+    right: 10px;
+  }
+
+    /* position: fixed;
+    top:0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); */
+    
+  
+  #NAV{
+    position: fixed;
+    display: block;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);;
+    top: 0;
+    bottom: 0;
+    left:0;
+    margin:auto;
+    color: #fff; 
+    text-align: center;
+    display: none;
+
+  }
+  a.navbutton{
+    display: block;
+    margin-top: 50px;
+    line-height: 50px;
+    color: white;
+  }
+
+  .flex-container-nav {
+    display: none;
+  }
+
+  .content {
+    position: absolute;
+    width: 80%;
+    left: 40px;
+    padding: 10px; 
+  }
+  
+  .flex-container-main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+}
